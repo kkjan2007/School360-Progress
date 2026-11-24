@@ -20,10 +20,10 @@ a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}.link
 <h1>School360 అభివృద్ధి ప్రగతి</h1>
 <p class="sub">KG నుంచి PG వరకు అన్ని రకాల విద్యాసంస్థలకు అనువైన, మొబైల్-ఫస్ట్ విద్యా నిర్వహణ వేదిక.</p>
 <div class="updated">చివరిగా ధృవీకరించిన ప్రాజెక్ట్ స్థితి: 24 నవంబర్ 2026</div>
-<div class="notice"><strong>మొత్తం అభివృద్ధి: 2%</strong> — ఇది ధృవీకరించిన ఇంజినీరింగ్ పురోగతికి సూచిక మాత్రమే. 50 మాడ్యూల్స్‌లో ఇంకా ఏదీ పూర్తి అప్లికేషన్‌గా అమలు కాలేదు.</div>
+<div class="notice"><strong>మొత్తం అభివృద్ధి: 2%</strong> — ఇది ధృవీకరించిన ఇంజినీరింగ్ పురోగతికి సూచిక మాత్రమే. Platform & Institution Management మాడ్యూల్‌ను వేరుగా నడిచే PoCలో అమలు చేసి పరీక్షించాం; ప్రధాన School360 అప్లికేషన్‌లో ఇంకా ఇంటిగ్రేట్ చేయలేదు.</div>
 <section class="stats" aria-label="ధృవీకరించిన పరీక్షా గణాంకాలు">
-<div class="stat"><strong>45</strong><span>ఆటోమేటెడ్ పరీక్షలు పాస్</span></div>
-<div class="stat"><strong>115</strong><span>Assertions విజయవంతం</span></div>
+<div class="stat"><strong>59</strong><span>ఆటోమేటెడ్ పరీక్షలు పాస్</span></div>
+<div class="stat"><strong>160</strong><span>Assertions విజయవంతం</span></div>
 <div class="stat"><strong>50</strong><span>మాడ్యూల్ అవసరాల బేస్‌లైన్</span></div>
 </section>
 <div class="notice"><strong>ముఖ్య గమనిక:</strong> ఇది అభివృద్ధి ప్రగతి నివేదిక మాత్రమే; ప్రస్తుతం ఉపయోగించగల School360 సాఫ్ట్‌వేర్ కాదు. ఇందులో లాగిన్, ఫీజుల సేకరణ, హాజరు నమోదు వంటి ప్రత్యక్ష వినియోగ స్క్రీన్‌లు లేవు.</div>
@@ -36,7 +36,8 @@ a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}.link
 <li>డొమైన్ గుర్తింపు, request/queue lifecycle isolation PoC పరీక్షలు</li>
 <li>Central identity schema మరియు గుర్తింపు ధృవీకరణ పరీక్షలు</li>
 <li>Session/Sanctum credential lifecycle primitives మరియు resolver PoC</li>
-<li>GitHub Actionsలో 45 పరీక్షలు, 115 assertions విజయవంతం (SessionGuard, Sanctum observer contract PoCతో సహా)</li>
+<li>Platform & Institution Management PoC: Institution create/edit/status, domain verification/primary domain, campus lifecycle/headquarters, platform-admin access</li>
+<li>GitHub Actionsలో 59 పరీక్షలు, 160 assertions విజయవంతం; Filament Admin institution routes గుర్తింపు ధృవీకరించబడింది</li>
 </ul></section>
 <section class="panel pending"><h2>ఇంకా చేయాల్సిన పని</h2><ul>
 <li>నిజమైన Laravel login/logout, session rotation integration</li>
@@ -49,9 +50,10 @@ a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}.link
 <li>స్వతంత్ర security review మరియు production readiness</li>
 </ul></section></div>
 <section class="panel"><h2>తాజా ధృవీకరణ</h2>
-<p>Runtime test workflow: <a href="https://github.com/kkjan2007/School360/actions/runs/45450362235">45 tests / 115 assertions — విజయవంతం</a></p>
-<p>Repository validation: <a href="https://github.com/kkjan2007/School360/actions/runs/45450361865">విజయవంతం</a></p>
+<p>Runtime test workflow: <a href="https://github.com/kkjan2007/School360/actions/runs/45454901941">59 tests / 160 assertions — విజయవంతం</a></p>
+<p>తాజా కోడ్ commit: <a href="https://github.com/kkjan2007/School360/commit/274bcd44c64f7fe1be2932086c912c9e5a0e163a">274bcd44</a> — Runtime verification విజయవంతం.</p>
 <p>Laravel SessionGuard login/logout/rotation పరీక్షలు విజయవంతం. Sanctum token observer contract కూడా పరీక్షించబడింది; Sanctum packageతో నిజమైన token model create/delete integration ఇంకా పెండింగ్‌లో ఉంది.</p>
+<p>Institution Management PoCలో 13 service tests ఉన్నాయి. ఇది ఇంకా persistent School360 applicationలో ఇంటిగ్రేట్ కాలేదు; production login, live DNS challenge, tenant database provisioning అమలైందని భావించకూడదు.</p>
 <p class="muted">ప్రస్తుత Laravel/Filament అమలు ప్రయోగాత్మక PoC దశలోనే ఉంది. Production architecture ఇంకా తుది నిర్ణయంగా ప్రకటించబడలేదు. 2% అనేది మొత్తం ఉత్పత్తి అభివృద్ధి అంచనా; documentation లేదా ప్రణాళికను పూర్తి అప్లికేషన్ ఫీచర్లుగా లెక్కించలేదు.</p>
 </section>
 <div class="links"><a href="https://github.com/kkjan2007/School360">ప్రధాన School360 Repository (Private)</a><a href="https://github.com/kkjan2007/School360-Progress">ఈ Progress Dashboard Repository</a></div>
