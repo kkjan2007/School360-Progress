@@ -22,8 +22,8 @@ a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}.link
 <div class="updated">చివరిగా ధృవీకరించిన ప్రాజెక్ట్ స్థితి: 24 నవంబర్ 2026</div>
 <div class="notice"><strong>మొత్తం అభివృద్ధి: 2%</strong> — ఇది ధృవీకరించిన ఇంజినీరింగ్ పురోగతికి సూచిక మాత్రమే. 50 మాడ్యూల్స్‌లో ఇంకా ఏదీ పూర్తి అప్లికేషన్‌గా అమలు కాలేదు.</div>
 <section class="stats" aria-label="ధృవీకరించిన పరీక్షా గణాంకాలు">
-<div class="stat"><strong>36</strong><span>ఆటోమేటెడ్ పరీక్షలు పాస్</span></div>
-<div class="stat"><strong>81</strong><span>Assertions విజయవంతం</span></div>
+<div class="stat"><strong>40</strong><span>ఆటోమేటెడ్ పరీక్షలు పాస్</span></div>
+<div class="stat"><strong>96</strong><span>Assertions విజయవంతం</span></div>
 <div class="stat"><strong>50</strong><span>మాడ్యూల్ అవసరాల బేస్‌లైన్</span></div>
 </section>
 <div class="notice"><strong>ముఖ్య గమనిక:</strong> ఇది అభివృద్ధి ప్రగతి నివేదిక మాత్రమే; ప్రస్తుతం ఉపయోగించగల School360 సాఫ్ట్‌వేర్ కాదు. ఇందులో లాగిన్, ఫీజుల సేకరణ, హాజరు నమోదు వంటి ప్రత్యక్ష వినియోగ స్క్రీన్‌లు లేవు.</div>
@@ -36,7 +36,7 @@ a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}.link
 <li>డొమైన్ గుర్తింపు, request/queue lifecycle isolation PoC పరీక్షలు</li>
 <li>Central identity schema మరియు గుర్తింపు ధృవీకరణ పరీక్షలు</li>
 <li>Session/Sanctum credential lifecycle primitives మరియు resolver PoC</li>
-<li>GitHub Actionsలో 36 పరీక్షలు, 81 assertions విజయవంతం</li>
+<li>GitHub Actionsలో 40 పరీక్షలు, 96 assertions విజయవంతం (session middleware PoCతో సహా)</li>
 </ul></section>
 <section class="panel pending"><h2>ఇంకా చేయాల్సిన పని</h2><ul>
 <li>నిజమైన Laravel login/logout, session rotation integration</li>
@@ -49,9 +49,9 @@ a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}.link
 <li>స్వతంత్ర security review మరియు production readiness</li>
 </ul></section></div>
 <section class="panel"><h2>తాజా ధృవీకరణ</h2>
-<p>Runtime test workflow: <a href="https://github.com/kkjan2007/School360/actions/runs/45446607675">36 tests / 81 assertions — విజయవంతం</a></p>
+<p>Runtime test workflow: <a href="https://github.com/kkjan2007/School360/actions/runs/45446607675">40 tests / 96 assertions — విజయవంతం</a></p>
 <p>Repository validation: <a href="https://github.com/kkjan2007/School360/actions/runs/45441785839">విజయవంతం</a></p>
-<p>Session login/logout/rotation synchronization middlewareపై తదుపరి పరీక్షలు కొనసాగుతున్నాయి.</p>
+<p>Session login/logout/rotation synchronization middleware PoC పరీక్షలు విజయవంతం; నిజమైన Authentication routesలో అనుసంధానం ఇంకా పెండింగ్‌లో ఉంది.</p>
 <p class="muted">ప్రస్తుత Laravel/Filament అమలు ప్రయోగాత్మక PoC దశలోనే ఉంది. Production architecture ఇంకా తుది నిర్ణయంగా ప్రకటించబడలేదు. 2% అనేది మొత్తం ఉత్పత్తి అభివృద్ధి అంచనా; documentation లేదా ప్రణాళికను పూర్తి అప్లికేషన్ ఫీచర్లుగా లెక్కించలేదు.</p>
 </section>
 <div class="links"><a href="https://github.com/kkjan2007/School360">ప్రధాన School360 Repository (Private)</a><a href="https://github.com/kkjan2007/School360-Progress">ఈ Progress Dashboard Repository</a></div>
