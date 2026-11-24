@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="te">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101827">
+<title>School360 — అభివృద్ధి ప్రగతి</title>
+<style>
+:root{color-scheme:dark;--bg:#0b1220;--panel:#121d30;--line:#26364e;--text:#edf3fc;--muted:#a9b8cc;--blue:#79b8ff;--green:#61d6a5;--amber:#f3c46b}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#1c3150 0,transparent 42%),var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Noto Sans Telugu",sans-serif}
+main{max-width:980px;margin:auto;padding:34px 20px 60px}.top{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}.tag{border:1px solid #315a52;color:var(--green);padding:5px 11px;border-radius:99px;font-size:13px}
+h1{font-size:clamp(30px,5vw,48px);line-height:1.2;margin:24px 0 8px}h2{font-size:20px;margin:0 0 14px}.sub,.muted{color:var(--muted)}.updated{font-size:13px;color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:26px 0}.stat,.panel{background:linear-gradient(145deg,#15243a,#101a2b);border:1px solid var(--line);border-radius:16px;padding:18px}.stat strong{display:block;font-size:30px;color:var(--blue);line-height:1.25}.stat span{color:var(--muted);font-size:13px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.panel{margin-bottom:14px}.panel ul{padding-left:22px;margin:0}.panel li{margin:7px 0}.done li::marker{color:var(--green)}.pending li::marker{color:var(--amber)}
+.notice{border-left:4px solid var(--amber);background:#2a2418;padding:15px 17px;border-radius:8px;color:#f5e7c8;margin:18px 0 24px}
+a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}.links{display:flex;gap:16px;flex-wrap:wrap;margin-top:20px}.foot{border-top:1px solid var(--line);margin-top:32px;padding-top:18px;color:var(--muted);font-size:13px}
+@media(max-width:650px){.stats{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr}.stat:last-child{grid-column:1/-1}}
+</style></head>
+<body><main>
+<div class="top"><strong>School360</strong><span class="tag">అభివృద్ధి నివేదిక</span></div>
+<h1>School360 అభివృద్ధి ప్రగతి</h1>
+<p class="sub">KG నుంచి PG వరకు అన్ని రకాల విద్యాసంస్థలకు అనువైన, మొబైల్-ఫస్ట్ విద్యా నిర్వహణ వేదిక.</p>
+<div class="updated">చివరిగా ధృవీకరించిన ప్రాజెక్ట్ స్థితి: 24 నవంబర్ 2026</div>
+<section class="stats" aria-label="ధృవీకరించిన పరీక్షా గణాంకాలు">
+<div class="stat"><strong>31</strong><span>ఆటోమేటెడ్ పరీక్షలు పాస్</span></div>
+<div class="stat"><strong>65</strong><span>Assertions విజయవంతం</span></div>
+<div class="stat"><strong>50</strong><span>మాడ్యూల్ అవసరాల బేస్‌లైన్</span></div>
+</section>
+<div class="notice"><strong>ముఖ్య గమనిక:</strong> ఇది అభివృద్ధి ప్రగతి నివేదిక మాత్రమే; ప్రస్తుతం ఉపయోగించగల School360 సాఫ్ట్‌వేర్ కాదు. ఇందులో లాగిన్, ఫీజుల సేకరణ, హాజరు నమోదు వంటి ప్రత్యక్ష వినియోగ స్క్రీన్‌లు లేవు.</div>
+<div class="grid">
+<section class="panel done"><h2>పూర్తయి ధృవీకరించిన పని</h2><ul>
+<li>KG–PG అన్ని విద్యాసంస్థల పరిధి, ఉత్పత్తి అవసరాల రూపకల్పన</li>
+<li>50 మాడ్యూల్స్‌కు అవసరాల బేస్‌లైన్</li>
+<li>సిస్టమ్ ఆర్కిటెక్చర్, భద్రతా నిర్ణయాలు, ADR డాక్యుమెంట్లు</li>
+<li>ప్రతి విద్యాసంస్థకు వేరు PostgreSQL డేటాబేస్ విధానంపై పరిమిత PoC పరీక్షలు</li>
+<li>డొమైన్ గుర్తింపు, request/queue lifecycle isolation PoC పరీక్షలు</li>
+<li>Central identity schema మరియు గుర్తింపు ధృవీకరణ పరీక్షలు</li>
+<li>GitHub Actionsలో 31 పరీక్షలు, 65 assertions విజయవంతం</li>
+</ul></section>
+<section class="panel pending"><h2>ఇంకా చేయాల్సిన పని</h2><ul>
+<li>నిజమైన login, session, credential lifecycle</li>
+<li>Sanctum token issue/revoke మరియు API authentication</li>
+<li>వెబ్ అప్లికేషన్ UI, Platform Admin console</li>
+<li>Student, Parent, Teacher portals</li>
+<li>Admissions, Fees, Attendance, Exams వంటి వ్యాపార మాడ్యూల్స్</li>
+<li>PWA, Android అనుభవం, notifications</li>
+<li>Production deployment, backups, monitoring</li>
+<li>స్వతంత్ర security review మరియు production readiness</li>
+</ul></section></div>
+<section class="panel"><h2>తాజా ధృవీకరణ</h2>
+<p>Runtime test workflow: <a href="https://github.com/kkjan2007/School360/actions/runs/45441785678">31 tests / 65 assertions — విజయవంతం</a></p>
+<p>Repository validation: <a href="https://github.com/kkjan2007/School360/actions/runs/45441785839">విజయవంతం</a></p>
+<p class="muted">ప్రస్తుత Laravel/Filament అమలు ప్రయోగాత్మక PoC దశలోనే ఉంది. Production architecture ఇంకా తుది నిర్ణయంగా ప్రకటించబడలేదు.</p>
+</section>
+<div class="links"><a href="https://github.com/kkjan2007/School360">ప్రధాన School360 Repository (Private)</a><a href="https://github.com/kkjan2007/School360-Progress">ఈ Progress Dashboard Repository</a></div>
+<footer class="foot">ఈ పేజీ పబ్లిక్‌గా కనిపిస్తుంది. వ్యక్తిగత సమాచారం, రహస్యాలు, credentials లేదా private source code ఇందులో ఉంచబడవు. స్థితి మార్పులు ధృవీకరణ తర్వాత మాత్రమే నవీకరించబడతాయి.</footer>
+</main></body></html>
