@@ -1,64 +1,67 @@
 <!doctype html>
-<html lang="te">
+<html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#101827">
-<title>School360 — అభివృద్ధి ప్రగతి</title>
+<title>School360 — Development Progress</title>
 <style>
 :root{color-scheme:dark;--bg:#0b1220;--panel:#121d30;--line:#26364e;--text:#edf3fc;--muted:#a9b8cc;--blue:#79b8ff;--green:#61d6a5;--amber:#f3c46b}
-*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#1c3150 0,transparent 44%),var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Noto Sans Telugu",sans-serif}
-main{max-width:980px;margin:auto;padding:34px 20px 60px}.top{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}.tag{border:1px solid #315a52;color:var(--green);padding:5px 11px;border-radius:99px;font-size:13px}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#1c3150 0,transparent 44%),var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:1020px;margin:auto;padding:34px 20px 60px}.top{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}.tag{border:1px solid #315a52;color:var(--green);padding:5px 11px;border-radius:99px;font-size:13px}
 h1{font-size:clamp(30px,5vw,48px);line-height:1.2;margin:24px 0 8px}h2{font-size:20px;margin:0 0 14px}.sub,.muted{color:var(--muted)}.updated{font-size:13px;color:var(--muted)}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:26px 0}.stat,.panel{background:linear-gradient(145deg,#15243a,#101a2b);border:1px solid var(--line);border-radius:16px;padding:18px}.stat strong{display:block;font-size:30px;color:var(--blue);line-height:1.25}.stat span{color:var(--muted);font-size:13px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:26px 0}.stat,.panel{background:linear-gradient(145deg,#15243a,#101a2b);border:1px solid var(--line);border-radius:16px;padding:18px}.stat strong{display:block;font-size:25px;color:var(--blue);line-height:1.25}.stat span{color:var(--muted);font-size:13px}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.panel{margin-bottom:14px}.panel ul{padding-left:22px;margin:0}.panel li{margin:7px 0}.done li::marker{color:var(--green)}.pending li::marker{color:var(--amber)}
 .notice{border-left:4px solid var(--amber);background:#2a2418;padding:15px 17px;border-radius:8px;color:#f5e7c8;margin:18px 0 24px}
 a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}.links{display:flex;gap:16px;flex-wrap:wrap;margin-top:20px}.foot{border-top:1px solid var(--line);margin-top:32px;padding-top:18px;color:var(--muted);font-size:13px}
 @media(max-width:650px){.stats{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr}.stat:last-child{grid-column:1/-1}}
 </style></head>
 <body><main>
-<div class="top"><strong>School360</strong><span class="tag">అభివృద్ధి నివేదిక</span></div>
-<h1>School360 అభివృద్ధి ప్రగతి</h1>
-<p class="sub">KG నుంచి PG వరకు అన్ని రకాల విద్యాసంస్థలకు అనువైన, మొబైల్-ఫస్ట్ విద్యా నిర్వహణ వేదిక.</p>
-<div class="updated">చివరిగా ధృవీకరించిన ప్రాజెక్ట్ స్థితి: 25 నవంబర్ 2026</div>
-<div class="notice"><strong>మొత్తం అభివృద్ధి: 4%</strong> — ఇది ధృవీకరించిన ఇంజినీరింగ్ పురోగతికి సూచిక మాత్రమే. ఈ దశలో Institution Management మరియు Platform Account Management అనే రెండు అభివృద్ధి మాడ్యూల్స్‌ను Laravel అప్లికేషన్ అభ్యర్థి వెర్షన్‌లో సమీకరించి పరీక్షించాం. 4% అనేది ధృవీకరించిన అభివృద్ధి పురోగతి మాత్రమే; ఇది Draft PRలో ఉంది, productionలో deploy కాలేదు.</div>
-<section class="stats" aria-label="ధృవీకరించిన పరీక్షా గణాంకాలు">
-<div class="stat"><strong>54</strong><span>అప్లికేషన్ పరీక్షలు పాస్</span></div>
-<div class="stat"><strong>152</strong><span>Assertions విజయవంతం</span></div>
-<div class="stat"><strong>50</strong><span>మాడ్యూల్ అవసరాల బేస్‌లైన్</span></div>
+<div class="top"><strong>School360</strong><span class="tag">Development Progress</span></div>
+<h1>School360 Development Progress</h1>
+<p class="sub">A mobile-first education management platform designed for institutions from Kindergarten through postgraduate and professional education.</p>
+<div class="updated">Repository checkpoint: 25 November 2026 · Active development branch: integration/institution-management-app</div>
+<div class="notice"><strong>Development status: Early implementation.</strong> The private repository contains the Laravel 13 and Filament 5 application foundation, institution and platform identity work, tenant-separated data modules, and an expanding set of academic, operational, and portal services. Recent portal and communication additions are committed but still awaiting the consolidated CI verification phase. This is not a production service.</div>
+<section class="stats" aria-label="Project scope">
+<div class="stat"><strong>50</strong><span>Baseline product modules</span></div>
+<div class="stat"><strong>12</strong><span>Tenant migration groups currently present</span></div>
+<div class="stat"><strong>3</strong><span>Portal roles under development</span></div>
 </section>
-<div class="notice"><strong>ముఖ్య గమనిక:</strong> ఇది అభివృద్ధి ప్రగతి నివేదిక మాత్రమే; ప్రస్తుతం ఉపయోగించగల School360 సాఫ్ట్‌వేర్ కాదు. ఇందులో లాగిన్, ఫీజుల సేకరణ, హాజరు నమోదు వంటి ప్రత్యక్ష వినియోగ స్క్రీన్‌లు లేవు.</div>
+<div class="notice"><strong>Preview limitation:</strong> This public page is a progress report, not the School360 application. The main source repository remains private. No public production login or live institution data is exposed here.</div>
 <div class="grid">
-<section class="panel done"><h2>పూర్తయి ధృవీకరించిన పని</h2><ul>
-<li>KG–PG అన్ని విద్యాసంస్థల పరిధి, ఉత్పత్తి అవసరాల రూపకల్పన</li>
-<li>50 మాడ్యూల్స్‌కు అవసరాల బేస్‌లైన్</li>
-<li>సిస్టమ్ ఆర్కిటెక్చర్, భద్రతా నిర్ణయాలు, ADR డాక్యుమెంట్లు</li>
-<li>ప్రతి విద్యాసంస్థకు వేరు PostgreSQL డేటాబేస్ విధానంపై పరిమిత PoC పరీక్షలు</li>
-<li>డొమైన్ గుర్తింపు, request/queue lifecycle isolation PoC పరీక్షలు</li>
-<li>Central identity schema మరియు గుర్తింపు ధృవీకరణ పరీక్షలు</li>
-<li>Session/Sanctum credential lifecycle primitives మరియు resolver PoC</li>
-<li>Laravel 13 + Filament 5 అప్లికేషన్ స్కాఫోల్డ్, Central PostgreSQL కనెక్షన్, Admin Login</li>
-<li>Institution Management: Institution lifecycle, DNS TXT domain verification, primary domain, campuses, headquarters</li>
-<li>Platform Account Management: first-admin bootstrap, account create/suspend/reactivate, append-only audit history</li>
-<li>నిజమైన Filament HTTP routes మరియు admin authorization పరీక్షలు</li>
-<li>GitHub Actionsలో అప్లికేషన్ స్థాయిలో 54 పరీక్షలు, 152 assertions విజయవంతం</li>
+<section class="panel done"><h2>Implemented in the development branch</h2><ul>
+<li>KG–PG product scope, 50-module requirements baseline, architecture and security decisions</li>
+<li>Laravel 13 + Filament 5 application scaffold and central identity foundation</li>
+<li>Institution lifecycle, domain ownership verification, campus and headquarters management</li>
+<li>Platform account provisioning, suspension/reactivation and audit history</li>
+<li>Tenant-separated academic structure, student records, guardian links and enrolments</li>
+<li>Admissions lifecycle, document verification and accepted-application conversion</li>
+<li>Attendance sessions, attendance records and reporting services</li>
+<li>Fee structures, invoices, payments, concessions, refunds and reporting services</li>
+<li>Staff management, leave workflows and payroll services</li>
+<li>Transport, library, examinations, timetable and communication data modules</li>
+<li>Parent, student and staff portal data services and responsive English dashboard views</li>
+<li>Portal identity, membership, session credential and profile ownership controls</li>
+<li>Authenticated portal landing page and recipient-scoped notifications inbox</li>
+<li>Unread counts, mark-one-read and mark-all-read notification actions</li>
+<li>Scheduled announcement publication, tenant-resolved audience distribution and in-app delivery processing</li>
 </ul></section>
-<section class="panel pending"><h2>ఇంకా చేయాల్సిన పని</h2><ul>
-<li>Tenant identity/session middlewareను నిజమైన HTTP pipelineలో సమీకరించడం</li>
-<li>Sanctum token model create/delete end-to-end integration మరియు protected API authentication</li>
-<li>Student, Parent, Teacher portals మరియు మిగిలిన business modules</li>
-<li>Student, Parent, Teacher portals</li>
-<li>Admissions, Fees, Attendance, Exams వంటి వ్యాపార మాడ్యూల్స్</li>
-<li>PWA, Android అనుభవం, notifications</li>
-<li>Production deployment, backups, monitoring</li>
-<li>స్వతంత్ర security review మరియు production readiness</li>
+<section class="panel pending"><h2>Remaining implementation and verification</h2><ul>
+<li>Complete the real portal dashboard controller and carefully gated dashboard route activation</li>
+<li>Complete role-specific portal self-service screens and workflows</li>
+<li>Finish institution configuration for different education systems, grading, terms and academic calendars</li>
+<li>Complete remaining business workflows, reports, imports, exports and approvals</li>
+<li>Build a cohesive mobile-first admin experience and installable PWA/Android client</li>
+<li>Connect and configure real email, SMS, push and payment providers</li>
+<li>Implement tenant-aware scheduled workers, backups, monitoring and operational recovery</li>
+<li>Run one consolidated CI suite, repair regressions and complete cross-tenant security verification</li>
+<li>Deploy a private application preview and complete production readiness review</li>
 </ul></section></div>
-<section class="panel"><h2>తాజా ధృవీకరణ</h2>
-<p>Application integration CI: <a href="https://github.com/kkjan2007/School360/actions/runs/45543894670">54 tests / 152 assertions — విజయవంతం</a></p>
-<p>Laravel/Filament tenancy PoC regression: <a href="https://github.com/kkjan2007/School360/actions/runs/45543670964">విజయవంతం</a></p>
-<p>ధృవీకరించిన కోడ్ commit: <a href="https://github.com/kkjan2007/School360/commit/77121930171aa2753bd3f5e58b2e3e89b31b507b">77121930</a>.</p>
-<p>Institution Managementలో domain deletion safeguards మరియు directory filters, Platform Account Management నిజమైన repository Laravel అప్లికేషన్‌లో పరీక్షించబడ్డాయి. Draft <a href="https://github.com/kkjan2007/School360/pull/1">Pull Request #1</a> ఇంకా merge కాలేదు.</p>
-<p class="muted">ప్రస్తుత Laravel/Filament అమలు అభివృద్ధి/PoC అభ్యర్థి మాత్రమే; production architecture ఇంకా తుది నిర్ణయంగా ప్రకటించబడలేదు. ఇది ప్రస్తుతం ఉపయోగించగల School360 సేవ కాదు. 4% అనేది ధృవీకరించిన development progress మాత్రమే; production-ready మాడ్యూల్స్ 0/50. Documentation లేదా ప్రణాళికను పూర్తి అప్లికేషన్ ఫీచర్లుగా లెక్కించలేదు.</p>
+<section class="panel"><h2>Current engineering checkpoint</h2>
+<p>Latest private application branch commit: <a href="https://github.com/kkjan2007/School360/commit/23cd0e0f334c461292e24334027761cf7b3775da">23cd0e0f</a>.</p>
+<p>Latest bulk communication implementation commits: <a href="https://github.com/kkjan2007/School360/commit/0ed0619042982c84018a7d4cb402a7137e947fc0">scheduled publishing and audience fanout</a>, <a href="https://github.com/kkjan2007/School360/commit/ad40ba28972b0807f8ea8ff299e54798323605ac">scheduled in-app delivery processing</a>, and <a href="https://github.com/kkjan2007/School360/commit/93dd825e6a21c1d11f45623685e3486eded54095">communication readiness documentation</a>.</p>
+<p>Recent communication and portal additions have not yet been run through CI. Earlier passing test counts are historical checkpoints and must not be interpreted as validation of the latest commits.</p>
+<p class="muted">Production-ready modules: not yet declared. Live payments, external message delivery, public student/parent/staff dashboards and production deployment are not claimed.</p>
 </section>
-<div class="links"><a href="https://github.com/kkjan2007/School360">ప్రధాన School360 Repository (Private)</a><a href="https://github.com/kkjan2007/School360-Progress">ఈ Progress Dashboard Repository</a></div>
-<footer class="foot">ఈ పేజీ పబ్లిక్‌గా కనిపిస్తుంది. వ్యక్తిగత సమాచారం, రహస్యాలు, credentials లేదా private source code ఇందులో ఉంచబడవు. స్థితి మార్పులు ధృవీకరణ తర్వాత మాత్రమే నవీకరించబడతాయి.</footer>
+<div class="links"><a href="https://github.com/kkjan2007/School360">Main School360 Repository (Private)</a><a href="https://github.com/kkjan2007/School360-Progress">Public Progress Dashboard Repository</a></div>
+<footer class="foot">This page is public. It contains no private source code, credentials, personal information, or live institution records. Status is updated as implementation and verification milestones are reached.</footer>
 </main></body></html>
