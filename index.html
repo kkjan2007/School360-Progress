@@ -43,10 +43,12 @@ a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}.link
 <li>Portal identity, membership, session credential and profile ownership controls</li>
 <li>Authenticated portal landing page and recipient-scoped notifications inbox</li>
 <li>Unread counts, mark-one-read and mark-all-read notification actions</li>
+<li>Feature-gated Parent, Student and Staff dashboard controller with dashboard routes disabled by default</li>
+<li>Staff self-service leave request and cancellation screens with server-side ownership checks</li>
 <li>Scheduled announcement publication, tenant-resolved audience distribution and in-app delivery processing</li>
 </ul></section>
 <section class="panel pending"><h2>Remaining implementation and verification</h2><ul>
-<li>Complete the real portal dashboard controller and carefully gated dashboard route activation</li>
+<li>Run consolidated portal tests and cross-tenant ownership verification before enabling dashboards</li>
 <li>Complete role-specific portal self-service screens and workflows</li>
 <li>Finish institution configuration for different education systems, grading, terms and academic calendars</li>
 <li>Complete remaining business workflows, reports, imports, exports and approvals</li>
@@ -57,9 +59,9 @@ a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}.link
 <li>Deploy a private application preview and complete production readiness review</li>
 </ul></section></div>
 <section class="panel"><h2>Current engineering checkpoint</h2>
-<p>Latest private application branch commit: <a href="https://github.com/kkjan2007/School360/commit/23cd0e0f334c461292e24334027761cf7b3775da">23cd0e0f</a>.</p>
+<p>Latest private application branch commits: <a href="https://github.com/kkjan2007/School360/commit/7437ba01501b938539914e2c5337b2ad4385ee31">feature-gated dashboard routes</a>, <a href="https://github.com/kkjan2007/School360/commit/3aa26abb70a0eff95d33fa03111220f63d24f0bf">dashboard controller and leave actions</a>, <a href="https://github.com/kkjan2007/School360/commit/ddd53446df9841a96b7e7411c97c145ac8356f8f">staff leave cancellation UI</a>.</p>
 <p>Latest bulk communication implementation commits: <a href="https://github.com/kkjan2007/School360/commit/0ed0619042982c84018a7d4cb402a7137e947fc0">scheduled publishing and audience fanout</a>, <a href="https://github.com/kkjan2007/School360/commit/ad40ba28972b0807f8ea8ff299e54798323605ac">scheduled in-app delivery processing</a>, and <a href="https://github.com/kkjan2007/School360/commit/93dd825e6a21c1d11f45623685e3486eded54095">communication readiness documentation</a>.</p>
-<p>Recent communication and portal additions have not yet been run through CI. Earlier passing test counts are historical checkpoints and must not be interpreted as validation of the latest commits.</p>
+<p>Recent communication and portal additions have not yet been run through CI. Dashboard access remains disabled by default using SCHOOL360_PORTAL_DASHBOARDS_ENABLED=false. Earlier passing test counts are historical checkpoints and must not be interpreted as validation of the latest commits.</p>
 <p class="muted">Production-ready modules: not yet declared. Live payments, external message delivery, public student/parent/staff dashboards and production deployment are not claimed.</p>
 </section>
 <div class="links"><a href="https://github.com/kkjan2007/School360">Main School360 Repository (Private)</a><a href="https://github.com/kkjan2007/School360-Progress">Public Progress Dashboard Repository</a></div>
